@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Leave Reset</title>
+</head>
+<body>
+    <div id="mouse" onmouseover="mouseover()" onmouseleave="mouseleave()" 
+    style="height:100px; width:200px ; background-color : orange;">
+    Mouse Leave Reset</div>
+
+    <script>
+        function mouseover(){
+            document.getElementById("mouse").style.backgroundColor="green";
+        }
+        function mouseleave(){
+            document.getElementById("mouse").style.backgroundColor ="yellow";
+        }
+    </script>
+</body>
+</html>

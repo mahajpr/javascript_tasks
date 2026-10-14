@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change All Paragraph Color</title>
+</head>
+<body>
+    <p class  = "color-change">this is the paragraph 1</p>
+    <p class  = "color-change">this is the paragraph 2</p>
+    <p class  = "color-change">this is the paragraph 3</p>
+    <p class  = "color-change">this is the paragraph 4</p>
+    <p class  = "color-change">this is the paragraph 5</p>
+
+    <button onclick ="changetext()">Click Me</button>
+
+    <script>
+        function changetext(){
+            let text = document.getElementsByClassName("color-change");
+
+            for (let i = 0 ; i< text.length; i++ ){
+                text[i].style.color = "crimson";
+            }
+        }
+    </script>
+</body>
+</html>

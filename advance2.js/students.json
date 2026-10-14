@@ -1,0 +1,17 @@
+[
+    {
+        "name":"maha",
+        "mark":"90",
+        "grade":"A"
+    },
+    {
+        "name":"vigneshwari",
+        "mark":"99",
+        "grade":"A"
+    },
+    {
+        "name":"sri",
+        "mark":"80",
+        "grade":"B"
+    }
+]

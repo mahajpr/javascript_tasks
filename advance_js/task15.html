@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Selector</title>
+</head>
+<body>
+    <select id="selector" onchange ="changecourse()">
+        <option value="">select the course:</option>
+        <option value="Python">python</option>
+        <option value="Java">java</option>
+        <option value="Javascript">javascript</option>
+        <option value="React">react</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        function changecourse(){
+            let course = document.getElementById("selector").value ;
+            if ( course === "Python"){
+                document.getElementById("result").innerHTML ="this is the python description";
+            }
+            else if( course === "Java"){
+                document.getElementById("result").innerHTML ="this is the java description";
+
+            }
+            else if( course === "Javascript"){
+                document.getElementById("result").innerHTML ="this is the javascript description";
+            }
+            else if( course === "React"){
+                document.getElementById("result").innerHTML ="this is the react description";
+            }
+        }
+    </script>
+</body>
+</html>

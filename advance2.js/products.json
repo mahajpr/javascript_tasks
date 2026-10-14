@@ -1,0 +1,62 @@
+[
+  {
+    "productName": "Wireless Mouse",
+    "price": 799,
+    "category": "Electronics",
+    "rating": 4.5
+  },
+  {
+    "productName": "Bluetooth Headphones",
+    "price": 1999,
+    "category": "Electronics",
+    "rating": 4.7
+  },
+  {
+    "productName": "Gaming Keyboard",
+    "price": 2499,
+    "category": "Electronics",
+    "rating": 4.6
+  },
+  {
+    "productName": "Running Shoes",
+    "price": 2999,
+    "category": "Footwear",
+    "rating": 4.4
+  },
+  {
+    "productName": "Cotton T-Shirt",
+    "price": 599,
+    "category": "Clothing",
+    "rating": 4.2
+  },
+  {
+    "productName": "Backpack",
+    "price": 1499,
+    "category": "Accessories",
+    "rating": 4.3
+  },
+  {
+    "productName": "Smart Watch",
+    "price": 4999,
+    "category": "Electronics",
+    "rating": 4.8
+  },
+  {
+    "productName": "Coffee Mug",
+    "price": 299,
+    "category": "Kitchen",
+    "rating": 4.1
+  },
+  {
+    "productName": "Office Chair",
+    "price": 6999,
+    "category": "Furniture",
+    "rating": 4.6
+  },
+  {
+    "productName": "Water Bottle",
+    "price": 399,
+    "category": "Kitchen",
+    "rating": 4.4
+  }
+]

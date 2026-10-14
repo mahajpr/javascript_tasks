@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <style>
+        .card{
+            height:200px;
+            width:200px;
+            background-color:burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" 
+    onmouseover="highlight(this)" 
+    onmouseout ="removehighlight(this)" 
+    ondblclick="showdetails('Available Courses: 25')"> Courses</div>
+
+    <div class="card"
+    onmouseover ="highlight(this)"
+    onmouseout ="removehighlight(this)"
+    ondblclick = "showdetails('total students : 200')">Students</div>
+
+    <div class="card"
+    onmouseover = "highlight(this)"
+    onmouseout = "removehighlight(this)"
+    ondblclick = "showdetails('Faculuty members :40')">Faculty</div>
+    
+    <p id="details">Double-click a card to view details.</p>
+
+
+    <script>
+        function highlight(card) {
+            card.style.backgroundColor = "lightblue";
+            card.style.borderColor = "blue";
+        }
+
+        function removehighlight(card) {
+            card.style.backgroundColor = "";
+            card.style.borderColor = "gray";
+        }
+
+        function showdetails(message) {
+            document.getElementById("details").innerHTML = message;
+        }
+    </script>
+</body>
+</html>

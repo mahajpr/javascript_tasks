@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Chennai",
+        "temperature": 34,
+        "humidity": 70,
+        "weatherCondition": "Sunny"
+    },
+    {
+        "city": "Bangalore",
+        "temperature": 27,
+        "humidity": 82,
+        "weatherCondition": "Cloudy"
+    },
+    {
+        "city": "Delhi",
+        "temperature": 38,
+        "humidity": 45,
+        "weatherCondition": "Hot"
+    }
+]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Selector</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <button onclick="showGender()">Show Selected Gender</button>
+
+    <script>
+    function showGender() {
+        let genders = document.getElementsByName("gender");
+
+        for (let i = 0; i < genders.length; i++) {
+            if (genders[i].checked) {
+                alert(genders[i].value);
+            }
+        }
+    }
+    </script>
+</body>
+</html>

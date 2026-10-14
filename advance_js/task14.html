@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Button action</title>
+</head>
+<body>
+    <button  onclick="changetext()">change text</button>
+    <button  onclick = "changecolor()">change color</button>
+    <button onclick = "reset()">reset</button>
+    <p id="buttonaction"> Multiple Button action</p>
+    <script>
+        function changetext(){
+            document.getElementById("buttonaction").style.fontFamily="arial";
+        }
+        function changecolor(){
+            document.getElementById("buttonaction").style.color="red";
+        }
+        function reset(){
+            document.getElementById("buttonaction").style = "none";
+        }
+    </script>
+</body>
+</html>

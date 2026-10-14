@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Portal</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Portal</h2>
+
+        <label>Name:</label>
+        <input type="text" id="name" onchange="showPreview()">
+
+        <label>Email:</label>
+        <input type="email" id="email" onchange="showPreview()">
+
+        <label>Course:</label>
+        <select id="course" onchange="showPreview()">
+            <option value="">Select Course</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Data Science</option>
+        </select>
+
+        <button onclick="registerStudent()">Submit</button>
+
+        <div id="preview">
+            <h3>Preview</h3>
+            <p>Name: </p>
+            <p>Email: </p>
+            <p>Course: </p>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showPreview() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let course = document.getElementById("course").value;
+
+            document.getElementById("preview").innerHTML =
+                "<h3>Preview</h3>" +
+                "<p>Name: " + name + "</p>" +
+                "<p>Email: " + email + "</p>" +
+                "<p>Course: " + course + "</p>";
+        }
+
+        function registerStudent() {
+            let name = document.getElementById("name").value;
+
+            document.getElementById("message").innerHTML =
+                "Registration Successful! Welcome, " + name;
+        }
+    </script>
+
+</body>
+</html>

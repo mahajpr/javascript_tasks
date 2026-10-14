@@ -1,0 +1,12 @@
+[
+    {
+        "movietitle": "Movie1",
+        "releaseyear": "2004",
+        "rating": "3"
+    },
+    {
+        "movietitle": "Movie2",
+        "releaseyear": "2010",
+        "rating": "4"
+    }
+]

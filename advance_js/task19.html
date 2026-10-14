@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double click editor</title>
+</head>
+<body>
+    <p id="para" ondblclick ="editor()">
+        this is the paragraph to edit
+    </p>
+
+    <script>
+        function editor(){
+            let paragraph = document.getElementById("para");
+            paragraph.contentEditable =true;
+            paragraph.focus();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Language Survey</title>
+</head>
+
+    <input type="radio" name="language" value="python">Python
+    <input type="radio" name="language" value="java">Java
+    <input type="radio" name="language" value="javascript">Javascript
+
+    <button onclick="showlanguage()" >Show Selected Language:</button>
+
+    <script>
+        function showlanguage(){
+            let selected = document.getElementsByName("language");
+
+            for(let i=0 ; i<selected.length ;i++){
+                if(selected[i].checked){
+                    alert(selected[i].value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

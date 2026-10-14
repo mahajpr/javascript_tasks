@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Profile Review</title>
+</head>
+<body>
+    <form>
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name">
+        <label for="city">Enter your city:</label>
+        <input type="text" id="city">
+    </form>
+        <button type = "button" onclick = "profilereview()">
+            Click Me
+        </button>
+   
+    <p id="liveprofile"></p>
+    <script>
+        function profilereview(){
+           let name = document.getElementById("name").value;
+
+           let city = document.getElementById("city").value;
+
+           let display = document.getElementById("liveprofile");
+
+           display.innerHTML = 
+           `<p>Name:${name}</p>` +
+           `<p>City:${city}</p>`;
+                                                                                
+        }
+    </script>
+
+</body>
+</html>
+

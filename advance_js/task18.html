@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Box</title>
+    <style>
+        .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        }
+
+        #interactive-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://www.pngitem.com/pimgs/m/479-4795187_ipad-pro-12-9-silver-hd-png-download.png" 
+        alt="image" 
+        id="interactive-img" 
+        onmouseenter ="zoomIn()" 
+        onmouseleave = "zoomOut()">
+    </div>
+
+    <script>
+        function zoomIn(){
+            let img = document.getElementById("interactive-img");
+            img.style.transform="scale(1.2)";
+        }
+
+        function zoomOut(){
+            let img = document.getElementById("interactive-img");
+            img.style.transform = "scale(1)";
+        }
+    </script>
+</body>
+</html>
